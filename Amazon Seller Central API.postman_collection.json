@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "3f04efc1-74b9-4906-af77-dd244df98d8e",
+		"name": "Amazon Seller Central API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31531823"
+	},
+	"item": [
+		{
+			"name": "https://api.amazon.com/auth/o2/token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "Atzr|IwEBIMJoAOQ1SiP4h1d9wW8jtCWRUbpbIbdFlDYjZDDhiclKmbSs_a1Jpa-uBbY5HClIAmmYevTgyrTuRPnPF25uTi4kr9feMueGcP-uw0HneZIQF9jBjkpWzvI9pmTfc_G2rQs0ufnCxFOQbOWl-gSo5iz3kD89lXAWfDNUNVX5SyEo7HMP9mXe4NF0qj3B2qUyr_aVj4OuJ82tE098pxxnTDpg2he0KQtELkJ29l819TmtTKbRviAKXE5gzJjsPtCdP22bmqvfHbfizPDg4zWd0U3T3BU-hMTjP11O0ZMh6ChmHI4I-h4q6hikgctkw2dSfamoBhMUPGFcJKErf4KXf5xN",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.abc469d8f35f41a384df314dd3c569e0",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "amzn1.oa2-cs.v1.1fb266546d2db0a99ddba32364b10add0b5de43b22d8e1461e2fd78",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.amazon.com/auth/o2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"auth",
+						"o2",
+						"token"
+					]
+				},
+				"description": "Retrieve Access Token"
+			},
+			"response": []
+		}
+	]
+}
